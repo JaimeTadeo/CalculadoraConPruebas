@@ -17,12 +17,20 @@ describe("fizzbuzz", () => {
     expect(fizzbuzz(33)).toEqual("Fizz");
   });
 
-  it("debería devolver 'Fizz' si el numero es divisible por 5", () => {
-    expect(fizzbuzz(0)).toEqual("Buzz");
+  it("debería devolver 'Buzz' si el numero es divisible por 5", () => {
+    expect(fizzbuzz(5)).toEqual("Buzz");
   });
 
-  it("debería devolver 'Fizz' si el numero es divisible por 5", () => {
+  it("debería devolver 'Buzz' si el numero es divisible por 5", () => {
     expect(fizzbuzz(50)).toEqual("Buzz");
+  });
+
+  it("debería devolver 'FizzBuzz' si el numero es divisible por 3 y por 5", () => {
+    expect(fizzbuzz(15)).toEqual("FizzBuzz");
+  });
+
+  it("debería devolver 'FizzBuzz' si el numero es divisible por 3 y por 5", () => {
+    expect(fizzbuzz(30)).toEqual("FizzBuzz");
   });
 });
 
