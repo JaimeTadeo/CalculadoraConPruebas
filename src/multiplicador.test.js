@@ -8,7 +8,7 @@ describe("Multiplicar", () => {
 
 describe("Multiplicar", () => {
     it("deberia dar error", () => {
-      expect(multiplicar(3, 2)).toEqual(5);
+      expect(multiplicar(5, 5)).toEqual(25);
     });
   });
   
