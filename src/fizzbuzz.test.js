@@ -13,5 +13,16 @@ describe("fizzbuzz", () => {
     expect(fizzbuzz(3)).toEqual("Fizz");
   });
 
+  it("debería devolver 'Fizz' si el numero es divisible por 3", () => {
+    expect(fizzbuzz(33)).toEqual("Fizz");
+  });
+
+  it("debería devolver 'Fizz' si el numero es divisible por 5", () => {
+    expect(fizzbuzz(0)).toEqual("Buzz");
+  });
+
+  it("debería devolver 'Fizz' si el numero es divisible por 5", () => {
+    expect(fizzbuzz(50)).toEqual("Buzz");
+  });
 });
 
